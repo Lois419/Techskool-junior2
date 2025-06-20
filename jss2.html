@@ -6,6 +6,67 @@
   <link rel="stylesheet" href="jss1.css">
 </head>
 <body>
+  <style>
+    .footer {
+  background: linear-gradient(135deg, #004e92, #000428); /* Blue theme */
+  /* For purple theme, try: linear-gradient(135deg, #6a00ff, #3d0074); */
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  margin: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #fff2;
+  padding-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section a {
+  color: #d0e8ff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #fff3;
+  padding-top: 20px;
+}
+
+  </style>
   <header>
     <h1>JSS2 Subject Topics</h1>
   </header>
@@ -24,34 +85,45 @@
         </ul>
       </details>
     </section>
-
-    <section>
-      <details>
-        <summary>🔬 Basic Science</summary>
-        <ul>
-          <li><a href="#">Cells and Living Things</a></li>
-          <li><a href="#">Changes in Matter</a></li>
-          <li><a href="#">Energy and Its Forms</a></li>
-          <li><a href="#">Acids and Bases</a></li>
-          <li><a href="#">Simple Machines</a></li>
-          <li><a href="#">Human Circulatory System</a></li>
-        </ul>
-      </details>
-    </section>
-
-    <section>
-      <details>
-        <summary>📖 English Studies</summary>
-        <ul>
-          <li><a href="#">Reading Comprehension</a></li>
-          <li><a href="#">Grammar Usage</a></li>
-          <li><a href="#">Writing Descriptive Essays</a></li>
-          <li><a href="#">Tenses and Verbs</a></li>
-          <li><a href="#">Punctuation</a></li>
-          <li><a href="#">Literary Devices</a></li>
-        </ul>
-      </details>
-    </section>
-  </main>
+    
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Explore Topics</h3>
+      <ul>
+        <li><a href="#">Math</a></li>
+        <li><a href="#">Basic science</a></li>
+        <li><a href="#">English</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>From Our Learners</h3>
+      <p><em>"I never thought I'd fall in love with studying again—this site genuinely changed how I see learning."</em><br>— Maya, 22, Bristol</p>
+      <p><em>"I landed my first tech job thanks to Learnify's career track. Forever grateful."</em><br>— Jordan, 26, Manchester</p>
+    </div>
+    <div class="footer-section">
+      <h3>Stay Connected</h3>
+      <ul>
+        <li><a href="#">Subscribe to Newsletter</a></li>
+        <li><a href="#">Download the App</a></li>
+        <li><a href="#">Join Our Discord</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Made with 💡 in the UK • © 2025 Learnify. All rights reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
