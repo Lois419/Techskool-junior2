@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.navbar {
+        .navbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -27,10 +27,10 @@ body {
   cursor: pointer;
 }
 
-.science { background-color: #4da6ff; }  /* Blue */
-.english { background-color: #66cc66; }  /* Green */
-.maths   { background-color: #3366cc; }  /* Darker Blue */
-.profile { background-color: #2d862d; }  /* Darker Green */
+/* .science { background-color: #4da6ff; }
+.english { background-color: #66cc66; }
+.maths   { background-color: #3366cc; }
+.profile { background-color: #2d862d; } */
 
 /* Dropdown container */
 .dropdown {
@@ -50,6 +50,13 @@ body {
   left: 0;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
 }
 
 /* Dropdown links */

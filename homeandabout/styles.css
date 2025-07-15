@@ -5,6 +5,12 @@
     text-shadow: #3366cc;
 }
 
+.btn{
+  color: rgb(255, 0, 0);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: large;
+}
+
 .phew{
   display: flex;
   margin: 50px;
@@ -38,6 +44,8 @@ body{
   margin-right: 50px;
 }
 
+
+
 img{
   margin: 20px;
   width: 500px;
@@ -52,7 +60,6 @@ img{
 
 .nah{
   font-size: xx-large;
-  text-decoration: underline;
   text-align: center;
 }
 
@@ -68,13 +75,9 @@ img{
             margin: auto;
         }
 
-        .ise{
-          background-image: url(imgs/img\ 3.jpg);
-        }
 
-        .isii{
-          background-image: url(imgs/img13.jpeg);
-        }
+
+
 
         .navbar {
   position: fixed;
