@@ -1,0 +1,17 @@
+.question{
+    margin-bottom: 20px;
+}
+.question h2{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#submit-btn{
+    margin-top: 20px;
+}
+
+#result-container{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
