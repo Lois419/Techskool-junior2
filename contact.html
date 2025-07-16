@@ -12,21 +12,71 @@
     />
   </head>
   <body>
-    <h1 class="text-primary text-center">Contact with us now</h1>
-    <p class="text-start">Reach us at ... follow this link.</p>
-    <a href="./home.html">www.home.com</a>
+    <style>
+      input {
+        width: 650px;
+      }
+    </style>
+    <div class="container">
+      <h1 class="text-dark">Contact Us</h1>
+      <p>
+        We're here to help! Reach out to us with any questions or feedback you
+        may have
+      </p>
+    </div>
 
-    <hr />
+    <div class="container">
+      <h2>Contact Information</h2>
+      <hr />
+      <form action="">
+        <input type="email" placeholder="Email" class="p-2" required />
+        <hr />
+        <input type="phone" placeholder="Phone" class="p-2" required />
+        <hr />
+        <input type="address" placeholder="Address" class="p-2" required />
+      </form>
+    </div>
 
-    Get together in contact ...
+    <div class="container">
+      <h2>Send Us A Message</h2>
 
-    <hr />
+      <form action="">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="p-2 m-1"
+          placeholder="Enter Your Name"
+          required
+        />
+        <br />
+        <label for="name">Your Email</label>
+        <input
+          type="email"
+          class="p-2 m-1"
+          placeholder="Enter Your Email"
+          required
+        />
+        <br />
+        <label for="name">Subject</label>
+        <input
+          type="subject"
+          class="p-2 m-1"
+          placeholder="Enter Your Subject"
+          required
+        />
+        <br />
+      </form>
 
-    Get Our Email use one of them.
-    <br />
-    <a href="nnediusomirabel.okafor@techskool.org">Nnediuso Mirabel Okafor</a>
-    <br />
-    update more later
+      <p>Message</p>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Enter your message here..."
+        rows="5"
+        cols="30"
+      ></textarea
+      ><br />
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
