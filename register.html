@@ -3,84 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+  crossorigin="anonymous"
+/>
+<style>
+  body{
+    background-image: url(./login\ background.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+   
+  }
+  .the{
+    background-image: linear-gradient(to right, #4567b7,#1a1d23);
+    padding:40px;
+    border-radius: 5px;
+    
+    
+}
+</style>
   <title>LearnHub Signup</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #e6f0ff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .signup-container {
-      background-color: #ffffff;
-      padding: 30px 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 128, 0.1);
-      max-width: 400px;
-      width: 100%;
-    }
-
-    .signup-container h2 {
-      color: #0047ab;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 6px;
-      color: #003366;
-    }
-
-    .form-group input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #a3c2ff;
-      border-radius: 5px;
-    }
-
-    .signup-btn {
-      background-color: #3366cc;
-      color: white;
-      padding: 12px;
-      width: 100%;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .signup-btn:hover {
-      background-color: #254e99;
-    }
+</head>
+  
+  
   </style>
 </head>
 <body>
+
+  <nav class="navbar fixed-top"><iframe src="navbar.html" frameborder="0"  height="59.5" width="100%"></iframe></nav>
   <div class="signup-container">
-    <h2>Create Your Account</h2>
+    <h2 class="ms-3">Create An Account</h2>
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card mt-5">
+       
+            <div class="the">
+              <div class="bg-white">
     <form>
-      <div class="form-group">
-        <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" name="fullname" required />
+      <div class="mb-3 mb-md-4 mb-lg-5 ms-2">
+        <label for="exampleInputName1" class="form-label fw-bold">Full Name</label>
+        <input type="text" class="form-control" id="exampleInputName1">
       </div>
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required />
+      <div class="mb-3 mb-md-4 mb-lg-5 ms-2">
+        <label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required />
+      <div class="mb-3 mb-md-4 mb-lg-5 ms-2">
+        <label for="exampleInputPassword1" class="form-label fw-bold">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
       </div>
-      <button type="submit" class="signup-btn">Sign Up</button>
+      <div class="mb-3 mb-md-4 mb-lg-5 ms-2form-check ms-3">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div class= "mb-4">
+      <button type="submit" class="btn btn-primary ms-3 mb-3">Submit</button>
     </form>
+ 
+    </div>
   </div>
+ </div>
+ </div>
+      </div>
+    </div>
+     </div>
+      
+
+
+
+  <footer class="footer"> <iframe src="./footer.html" frameborder="0" height="500" width="100%"  ></iframe></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
@@ -88,3 +86,8 @@
     ></script>
   </body>
 </html>
+
+
+
+
+
