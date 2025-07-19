@@ -50,12 +50,31 @@ img{
   justify-content: center;
 }
 
+.nah{
+  font-size: xx-large;
+  text-decoration: underline;
+  text-align: center;
+}
+
+ .id{
+  margin: 80px;
+  font-size: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+ }
 
    .carousel {
             max-width: 800px;
             margin: auto;
         }
 
+        .ise{
+          background-image: url(imgs/img\ 3.jpg);
+        }
+
+        .isii{
+          background-image: url(imgs/img13.jpeg);
+        }
 
         .navbar {
   position: fixed;
@@ -68,6 +87,18 @@ img{
   padding: 15px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1000;
+}
+
+.wow{
+  text-align: center;
+  text-decoration: wavy;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.yay{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .nav-link,
@@ -188,7 +219,4 @@ img{
 
 .op{
   background-color: rgba(128, 128, 128, 0.221);
-}
-.yay{
-  background: linear-gradient(135deg, #004e92, #000428);
 }
