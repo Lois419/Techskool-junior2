@@ -2,6 +2,12 @@
     color: plum;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
+    text-shadow: #3366cc;
+}
+
+.phew{
+  display: flex;
+  margin: 50px;
 }
 
 body{
@@ -21,11 +27,34 @@ body{
 }
 .abuo{
   color: #000000;
+  margin-left: auto;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .ato{
   color: black;
+  margin-right: 50px;
 }
+
+img{
+  margin: 20px;
+  width: 500px;
+}
+
+.win{
+  margin: 70px;
+}
+.row{
+  justify-content: center;
+}
+
+
+   .carousel {
+            max-width: 800px;
+            margin: auto;
+        }
 
 
         .navbar {
