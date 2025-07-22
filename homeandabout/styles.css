@@ -5,6 +5,12 @@
     text-shadow: #3366cc;
 }
 
+.btn{
+  color: rgb(255, 0, 0);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: large;
+}
+
 .phew{
   display: flex;
   margin: 50px;
