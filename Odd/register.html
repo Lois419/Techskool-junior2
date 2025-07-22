@@ -21,10 +21,79 @@
   .the{
     background-image: linear-gradient(to right, #4567b7,#1a1d23);
     padding:40px;
-    border-radius: 5px;
-    
-    
+    border-radius: 5px;  
 }
+
+.logo{
+    color: plum;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    text-shadow: #3366cc;
+}
+
+.nav-link,
+.dropbtn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+        .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1001;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #e0e0e0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+
 </style>
   <title>LearnHub Signup</title>
 </head>
@@ -34,7 +103,34 @@
 </head>
 <body>
 
-  <nav class="navbar fixed-top"><iframe src="navbar.html" frameborder="0"  height="59.5" width="100%"></iframe></nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand" href="#"><div class="logo">Learn-hub </div></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../homeandabout/index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Jss1</a>
+          <a class="dropdown-item" href="#">Jss2</a>
+          <a class="dropdown-item" href="#">Jss3</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">B.E.C.E pastquestions</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../homeandabout/about.html">About</a>
+      </li>
+          </ul>
+  </div>
+</nav>
   <div class="signup-container">
     <h2 class="ms-3">Create An Account</h2>
 
@@ -78,7 +174,7 @@
 
 
 
-  <footer class="footer"> <iframe src="./footer.html" frameborder="0" height="500" width="100%"  ></iframe></footer>
+  <footer class="footer"> <iframe src="../mathematics js1/footer.html" frameborder="0" height="500" width="100%"  ></iframe></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

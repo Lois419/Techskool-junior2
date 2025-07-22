@@ -38,6 +38,8 @@ body{
   margin-right: 50px;
 }
 
+
+
 img{
   margin: 20px;
   width: 500px;
@@ -52,7 +54,6 @@ img{
 
 .nah{
   font-size: xx-large;
-  text-decoration: underline;
   text-align: center;
 }
 
@@ -68,13 +69,9 @@ img{
             margin: auto;
         }
 
-        .ise{
-          background-image: url(imgs/img\ 3.jpg);
-        }
 
-        .isii{
-          background-image: url(imgs/img13.jpeg);
-        }
+
+
 
         .navbar {
   position: fixed;
