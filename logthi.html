@@ -19,8 +19,7 @@
   <body>
     <style>
       .log-form {
-        background-color: aliceblue;
-        border: 1px rgb(71, 70, 70) solid;
+        background: lightblue;
       }
       .footer {
         background: linear-gradient(135deg, #004e92, #000428); /* Blue theme */
@@ -28,6 +27,10 @@
         color: #fff;
         padding: 40px 20px;
         font-family: "Segoe UI", sans-serif;
+      }
+
+      img{
+        width: 700px;
       }
 
       .footer-container {
@@ -80,14 +83,33 @@
         border-top: 1px solid #fff3;
         padding-top: 20px;
       }
+
+.wo{
+  display: flex;
+}
+
     </style>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <button class="btn btn-outline-success ml-auto" type="button"><a href="homeandabout/index.html">◀️back</a></button>
+    </div>
+  </nav>
+          <div class="wo">
+          <img src="imgs/img20.jpeg" alt="">
     <div class="log-form">
       <h2 class="text-center text-light">Login [Mostly Common]</h2>
       <div class="text-center container">
+      <div class="text-left container">
         <form action="">
           <input
             type="text"
-            placeholder="Enter Name"
+            placeholder="First name"
+            class="m-2 p-1"
+            required
+          />
+          <br>
+          <input
+            type="text"
+            placeholder="Last name"
             class="m-2 p-1"
             required
           />
@@ -106,22 +128,21 @@
             required
           />
           <br />
+          </div>
         </form>
 
         <a href="./logfou.html" class="btn btn-primary m-2">Next ➡️</a>
       </div>
     </div>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container">
         <div class="footer-section">
           <h3>Navigation</h3>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="homeandabout/index.html">Home</a></li>
             <li><a href="#">Courses</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="homeandabout/about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -159,7 +180,7 @@
       <div class="footer-bottom">
         <p>Made with 💡 in the UK • © 2025 Learnify. All rights reserved.</p>
       </div>
-    </footer>
+    </footer> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
