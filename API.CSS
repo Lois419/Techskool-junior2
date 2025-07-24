@@ -1,0 +1,28 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.chat-box {
+  height: 60vh; /* Adjust as needed */
+  overflow-y: auto;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.user-message {
+  justify-content: flex-end;
+}
+
+.user-message .p-2 {
+  background-color: #d1e7dd !important; /* Light green for user messages */
+}
+
+.bot-message {
+  justify-content: flex-start;
+}
+
+.bot-message .p-2 {
+  background-color: #f8f9fa !important; /* Light gray for bot messages */
+}

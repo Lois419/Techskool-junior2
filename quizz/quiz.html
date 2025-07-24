@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LearnHUB Assessment Quiz</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4fdf4;
+        padding: 30px;
+      }
+      .question-card {
+        background: #eaffea;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.483);
+        max-width: 500px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 8px 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>LearnHUB Assessment Quiz</h2>
+
+    <div id="quiz-container">
+      <!-- Question 1 -->
+      <div class="question-card" id="question-1">
+        <p><strong>1. What is a 1010 in base 10?</strong></p>
+        <label><input type="radio" name="q1" value="A" /> A. 8</label><br />
+        <label><input type="radio" name="q1" value="B" /> B. 10 ✅</label><br />
+        <label><input type="radio" name="q1" value="C" /> C. 12</label><br />
+        <button onclick="nextQuestion(1)">Next</button>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question-card" id="question-2" style="display: none">
+        <p><strong>2. Simplify 4/8</strong></p>
+        <label><input type="radio" name="q2" value="A" /> A. 1/8</label><br />
+        <label><input type="radio" name="q2" value="B" /> B. 1/2✅</label><br />
+        <label><input type="radio" name="q2" value="C" /> C. 1/4</label><br />
+        <button onclick="nextQuestion(2)">Next</button>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question-card" id="question-2" style="display: none">
+        <p><strong>2. What's the L.C.M of 4 and 6</strong></p>
+        <label><input type="radio" name="q3" value="A" /> A.12✅</label><br />
+        <label><input type="radio" name="q3" value="B" /> B. 6</label><br />
+        <label><input type="radio" name="q3" value="C" /> C. 24</label><br />
+        <button onclick="nextQuestion(3)">Next</button>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question-card" id="question-2" style="display: none">
+        <p><strong>2. What's 150 + 70 + 30</strong></p>
+        <label><input type="radio" name="q4" value="A" /> A. 50</label><br />
+        <label><input type="radio" name="q4" value="B" /> B. 150</label><br />
+        <label><input type="radio" name="q4" value="C" /> C. 110✅</label><br />
+        <button onclick="nextQuestion(4)">Next</button>
+      </div>
+      <!-- Question 4 -->
+      <div class="question-card" id="question-2" style="display: none">
+        <p><strong>2. What's 150 * 70 / 10</strong></p>
+        <label><input type="radio" name="q5" value="A" /> A. 50</label><br />
+        <label><input type="radio" name="q5" value="B" /> B. 150</label><br />
+        <label><input type="radio" name="q5" value="C" /> C. 1050✅</label
+        ><br />
+        <button onclick="nextQuestion(4)">Finish</button>
+      </div>
+
+      <!-- Final Result -->
+      <div class="question-card" id="result" style="display: none">
+        <h3>🎉 You scored <span id="score">0</span> out of 5!</h3>
+        <p>🥳 Well done! Keep learning with AgriKids!</p>
+      </div>
+    </div>
+
+    <script>
+      let score = 0;
+
+      function nextQuestion(qNum) {
+        const selected = document.querySelector(
+          `input[name="q${qNum}"]:checked`
+        );
+        if (!selected) {
+          alert("Please select an answer before continuing.");
+          return;
+        }
+
+        const correctAnswers = {
+          1: "B",
+          2: "B",
+          3: "A",
+          4: "C",
+          5: "C",
+        };
+
+        if (selected.value === correctAnswers[qNum]) {
+          score++;
+        }
+
+        // Hide current question
+        document.getElementById(`question-${qNum}`).style.display = "none";
+
+        // Show next question or result
+        const nextCard = document.getElementById(`question-${qNum + 1}`);
+        if (nextCard) {
+          nextCard.style.display = "block";
+        } else {
+          document.getElementById("result").style.display = "block";
+          document.getElementById("score").textContent = score;
+        }
+      }
+    </script>
+  </body>
+</html>
