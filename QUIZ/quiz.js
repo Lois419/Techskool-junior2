@@ -1,18 +1,18 @@
 const questions = [
   {
-    question: "What is the capital of France?",
-    options: ["Paris", " London", "Berlin", "Rome"],
-    answer: 0,
+    question: "11+10=?",
+    options: ["13", "110", "21", "22"],
+    answer: 2,
   },
   {
-    question: "What is the largest planet in our Solar system?",
-    options: ["Earth", "Saturn", "Jupiter", "Uranus"],
+    question: "Akilla has 5apples and her mom gave her 6 more how many does she have in total?",
+    options: ["30", "5", "16", "11"],
     answer: 3,
   },
   {
-    question: "What painted the Mona Lisa?",
-    options: ["Learnodo da Vinci", " Michelango", "Raphael", "Caravaggio"],
-    answer: 0,
+    question: "What is the sum of 150 and 30?",
+    options: ["113", "130", "180", "170"],
+    answer: 2,
   }
 ];
 

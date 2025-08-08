@@ -1,200 +1,152 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - LearnHub</title>
-
-    <!-- Bootstrap CSS -->
+    <title>LearnHub Contact</title>
+    <link
+      rel="icon"
+      href="./BCO.599110e8-c3b5-4d51-b153-b475ab9cdd77.png"
+      type="image/png"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
     />
-
-    <!-- Bootstrap Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-
-    <!-- Google Font (same as index.html) -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
-
-    <!-- LearnHub CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="contact.css" />
-
-    <!-- NAVBAR FETCH -->
-    <script>
-      fetch("navbar.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("navbar-container").innerHTML = data;
-        });
-    </script>
-
-    <style>
-      body {
-        font-family: 'Nunito', sans-serif;
-        background-color: #f9f9f9;
+        <style>
+      input {
+        width: 650px;
       }
 
-      h1, h2, h5 {
-        font-weight: 700;
-      }
-
-      .content {
-        background-color: #fff;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      }
-
-      .footer {
-        background-color: #002244;
-        color: #fff;
-      }
-
-      .footer-section h3 {
-        font-size: 1.25rem;
-        margin-bottom: 10px;
-      }
-
-      .footer-section a {
-        color: #fff;
+      a{
         text-decoration: none;
-      }
-
-      .footer-section a:hover {
-        text-decoration: underline;
-      }
-
-      .footer-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 40px 20px;
-      }
-
-      .footer-bottom {
-        background-color: #001a33;
-        color: #ccc;
       }
     </style>
   </head>
-
   <body>
-    <!-- NAVBAR -->
-    <div id="navbar-container"></div>
-
-    <!-- PAGE CONTENT -->
-    <div class="container mt-5 pt-5">
-      <div class="content">
-        <h1 class="text-center mb-3 text-primary">Contact Us</h1>
-        <p class="text-center text-muted mb-5">
-          We’re here to help! Reach out with any questions or feedback.
-        </p>
-
-        <!-- CONTACT INFO -->
-        <div class="row text-center mb-4">
-          <div class="col-md-4 mb-3">
-            <h5><i class="bi bi-envelope-fill text-primary me-2"></i>Email</h5>
-            <p>support@learnhub.com</p>
-          </div>
-          <div class="col-md-4 mb-3">
-            <h5><i class="bi bi-telephone-fill text-success me-2"></i>Phone</h5>
-            <p>+234 800 123 4567</p>
-          </div>
-          <div class="col-md-4 mb-3">
-            <h5><i class="bi bi-geo-alt-fill text-danger me-2"></i>Address</h5>
-            <p>123 Learning Lane, Lagos, Nigeria</p>
-          </div>
-        </div>
-
-        <!-- CONTACT FORM -->
-        <h2 class="text-center mb-4">Send Us a Message</h2>
-        <form>
-          <div class="row mb-3">
-            <div class="col-md-6">
-              <label for="name" class="form-label">
-                <i class="bi bi-person-fill me-1 text-primary"></i>Full Name
-              </label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
-            </div>
-            <div class="col-md-6">
-              <label for="email" class="form-label">
-                <i class="bi bi-envelope-fill me-1 text-danger"></i>Email
-              </label>
-              <input type="email" class="form-control" id="email" placeholder="example@mail.com" required />
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <div class="col-md-6">
-              <label for="subject" class="form-label">
-                <i class="bi bi-chat-left-text-fill me-1 text-success"></i>Subject
-              </label>
-              <input type="text" class="form-control" id="subject" placeholder="Message subject" required />
-            </div>
-            <div class="col-md-6">
-              <label for="phone" class="form-label">
-                <i class="bi bi-telephone-fill me-1 text-secondary"></i>Phone
-              </label>
-              <input type="tel" class="form-control" id="phone" placeholder="Optional phone number" />
-            </div>
-          </div>
-
-          <div class="mb-4">
-            <label for="message" class="form-label">
-              <i class="bi bi-pencil-fill me-1 text-warning"></i>Message
-            </label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Type your message..." required></textarea>
-          </div>
-
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary px-4">
-              <i class="bi bi-send-fill me-1"></i>Send Message
-            </button>
-          </div>
-        </form>
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="mad">
+     <button class="btn btn-outline-success ml-auto" type="button"><a href="dash.html">◀️Back</a></button>
+     </div>
+    </div>
+   
+    <div class="container">
+      <h1 class="text-dark">Contact Us</h1>
+      <p>
+        We're here to help! Reach out to us with any questions or feedback you
+        may have
+      </p>
     </div>
 
-    <!-- FOOTER -->
-    <footer class="footer mt-5">
+    <div class="container">
+      <h2>Contact Information</h2>
+
+      <hr />
+      <form action="">
+        <input type="email" placeholder="Email" class="p-2" required />
+        <hr />
+        <input type="phone" placeholder="Phone" class="p-2" required />
+        <hr />
+        <input type="address" placeholder="Address" class="p-2" required />
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Send Us A Message</h2>
+      <form action="">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="p-2 m-1"
+          placeholder="Enter Your Name"
+          required
+        />
+        <br />
+        <label for="name">Your Email</label>
+        <input
+          type="email"
+          class="p-2 m-1"
+          placeholder="Enter Your Email"
+          required
+        />
+        <br />
+        <label for="name">Subject</label>
+        <input
+          type="subject"
+          class="p-2 m-1"
+          placeholder="Enter Your Subject"
+          required
+        />
+        <br />
+      </form>
+
+      <p>Message</p>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Enter your message here..."
+        rows="5"
+        cols="30"
+      ></textarea
+      ><br />
+      <button class="btn btn-outline-primary">
+        <a href="contact.html">Send</a>
+      </button>
+    </div>
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-section">
-          <h3>About LearnHub</h3>
-          <p>
-            LearnHub is your go-to platform for engaging and interactive learning for Junior Secondary School students.
-          </p>
-        </div>
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul class="list-unstyled">
-            <li><a href="index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
-            <li><a href="#"><i class="bi bi-journal-text me-1"></i>Courses</a></li>
-            <li><a href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a></li>
-            <li><a href="#"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a></li>
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="../homeandabout/index.html">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="../homeandabout/about.html">About Us</a></li>
+            <li><a href="../CHATBOX/API.HTML">AI assistant</a></li>
+            <li><a href="../contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h3>Connect With Us</h3>
-          <p><i class="bi bi-envelope-fill me-1"></i> support@learnhub.com</p>
-          <p><i class="bi bi-telephone-fill me-1"></i> +234 800 123 4567</p>
+          <h3>Explore Topics</h3>
+          <ul>
+            <li><a href="#">Math</a></li>
+            <li><a href="#">Etiquette</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>From Our Learners</h3>
           <p>
-            <i class="bi bi-instagram me-2"></i>
-            <i class="bi bi-facebook me-2"></i>
-            <i class="bi bi-twitter-x"></i>
+            <em
+              >"I never thought I'd fall in love with studying again—this site
+              genuinely changed how I see learning."</em
+            ><br />— Maya, 12, Lagos
+          </p>
+          <p>
+            <em
+              >"I landed my first A plus at school thanks to LearnHub career
+              track. Forever grateful."</em
+            ><br />— Kelechi, 8, Enugu
           </p>
         </div>
+        <div class="footer-section">
+          <h3>Stay Connected</h3>
+          <ul>
+            <li><a href="#">Subscribe to Newsletter</a></li>
+            <li><a href="#">Download the App</a></li>
+            <li><a href="#">Join Our Discord</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-bottom text-center py-3">
-        &copy; 2025 LearnHub. All rights reserved.
+      <div class="footer-bottom">
+        <p>
+          Made with 💡 in the Nigeria • © 2025 LearnHub. All rights reserved.
+        </p>
       </div>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
