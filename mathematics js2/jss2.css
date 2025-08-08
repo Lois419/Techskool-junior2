@@ -1,4 +1,4 @@
-/* General Page Styling */
+/* Page Base Styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f7fa;
@@ -7,7 +7,16 @@ body {
   color: #333;
 }
 
-/* Header */
+a{
+  text-decoration: none;
+}
+
+.wig{
+  text-align: center;
+  background-color: yellow;
+}
+
+/* Header Section */
 header {
   text-align: center;
   background-color: #006699;
@@ -17,32 +26,31 @@ header {
   margin-bottom: 30px;
 }
 
-/* Section Styles */
+/* Section Spacing */
 section {
   margin-bottom: 20px;
 }
 
-/* Dropdown Box Styling */
+/* Expandable Dropdown Styling */
 details {
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 12px 16px;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s ease;
 }
 
 details:hover {
-  box-shadow: 0 0 8px rgba(0, 102, 153, 0.2);
+  box-shadow: 0 0 8px rgba(0, 102, 153, 0.15);
 }
 
-/* Dropdown Summary Styling */
 summary {
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
 }
 
-/* Topic List Styling */
+/* Topic List Links */
 ul {
   list-style-type: none;
   padding-left: 20px;
@@ -50,15 +58,14 @@ ul {
 }
 
 ul li {
-  margin: 8px 0;
+  margin-bottom: 8px;
 }
 
-/* Links */
 ul li a {
   color: #006699;
   text-decoration: none;
   font-size: 16px;
-  transition: color 0.3s ease;
+  transition: color 0.2s;
 }
 
 ul li a:hover {

@@ -42,6 +42,10 @@
   color: black;
 }
 
+a{
+  text-decoration: none;
+}
+
 #dashboardContent.shifted {
   margin-left: 0;
 }
