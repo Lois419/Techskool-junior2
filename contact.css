@@ -1,0 +1,182 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 70px; /* Navbar spacing */
+}
+
+/* Container styles */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: #004080;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Form Labels */
+label {
+  font-weight: 600;
+  color: #003366;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+/* Form Inputs & Textareas */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="address"],
+input[type="subject"],
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Submit Button */
+button,
+input[type="submit"],
+.btn {
+  padding: 12px 25px;
+  background-color: #004e92;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.btn:hover {
+  background-color: #003366;
+}
+
+/* Contact Info Section */
+.contact-info h5 {
+  font-weight: bold;
+  color: #004080;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #004080;
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  background-color: #003366;
+}
+
+/* Contact form layout improvements */
+form .row {
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  form .row .col-md-6 {
+    margin-bottom: 15px;
+  }
+}

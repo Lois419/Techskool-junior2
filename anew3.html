@@ -3,91 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <title>JSS3 Mathematics Lessons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+      .hero-section {
+        background: linear-gradient(120deg, #004085, #0d6efd);
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+      .hero-section h1 {
+        font-size: 2.8rem;
+        font-weight: bold;
+      }
+      .hero-section p {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+      }
+    </style>
   </head>
 
   <body>
-    <iframe
-      src="./navbar.html"
-      frameborder="0"
-      width="100%"
-      height="70"
-    ></iframe>
-    
-    
-          <h1
-            class="text-center display-4 bg-primary text-white rounded p-0 m-0"
-          >
-            Mathematics for Junior Secondary Schools 3
-          </h1>
-          <p>
-            In the first year of Junior Secondary, students are begin start
-            consolidating tackling complex problems,and preparing for senior
-            secondary math and real- world applications
-          </p>
-        
-     
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="bi bi-lightning-charge-fill"></i> LearnHub
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown">Courses</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="jss1math.html">JSS1 Math</a></li>
+                <li><a class="dropdown-item" href="jss2math.html">JSS2 Math</a></li>
+                <li><a class="dropdown-item" href="jss3math.html">JSS3 Math</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="btn btn-light text-primary ms-2" href="register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12  mx-4 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Fractions, Decimals and Percentages</h5>
-            <p class="card-text">Whole Numbers are some...</p>
-            <a href="./Fractions, Decimals and Percentages.html">
-              Check Out The Lesson</a
-            >
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>JSS3 Mathematics</h1>
+        <p>Deepen your understanding of core concepts like statistics, interest, and fractions—everything you need for senior secondary success.</p>
+      </div>
+    </section>
+
+    <!-- LESSON CARDS -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- CARD 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-calculator-fill"></i> Approximation</h5>
+              <p class="card-text">Approximation involves rounding numbers to make them simpler but still accurate enough.</p>
+              <a href="./app.html">Check Out The Lesson</a>
+              <div class="form-check mt-2">
+                <input class="form-check-input" type="checkbox" id="approx">
+                <label class="form-check-label" for="approx">Mark as done</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-bar-chart-line-fill"></i> Mean & Median</h5>
+              <p class="card-text">Learn how to calculate averages and understand data distribution.</p>
+              <a href="./Mean and median.html">Check Out The Lesson</a>
+              <div class="form-check mt-2">
+                <input class="form-check-input" type="checkbox" id="mean">
+                <label class="form-check-label" for="mean">Mark as done</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-graph-up-arrow"></i> Mode & Range</h5>
+              <p class="card-text">Understand the most frequent and range of values in datasets.</p>
+              <a href="./Mode and range.html">Check Out The Lesson</a>
+              <div class="form-check mt-2">
+                <input class="form-check-input" type="checkbox" id="mode">
+                <label class="form-check-label" for="mode">Mark as done</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-cash-coin"></i> Simple Interest</h5>
+              <p class="card-text">Learn how to calculate interest on savings and loans using simple formulas.</p>
+              <a href="./Simple Intrest.html">Check Out The Lesson</a>
+              <div class="form-check mt-2">
+                <input class="form-check-input" type="checkbox" id="interest">
+                <label class="form-check-label" for="interest">Mark as done</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-list-numeric"></i> Standard Form</h5>
+              <p class="card-text">Convert very large or very small numbers into compact standard form.</p>
+              <a href="./Standard.html">Check Out The Lesson</a>
+              <div class="form-check mt-2">
+                <input class="form-check-input" type="checkbox" id="standard">
+                <label class="form-check-label" for="standard">Mark as done</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-pie-chart-fill"></i> Fractions</h5>
+              <p class="card-text">Review how to work with parts of a whole—addition, subtraction, and simplification.</p>
+              <a href="./fraction.html">Check Out The Lesson</a>
+              <div class="form-check mt-2">
+                <input class="form-check-input" type="checkbox" id="fractions">
+                <label class="form-check-label" for="fractions">Mark as done</label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Simple Interest</h5>
-            <p class="card-text">Simple In...</p>
-            <a href="./Simple Intrest.html"> Check Out The Lesson</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Trigonometry Basics</h5>
-            <p class="card-text">Trigonemetry ca...</p>
-            <a href="./trigo.html"> Check Out The Lesson</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Variation</h5>
-            <p class="card-text">The relationship...</p>
-            <a href="./variation.html">Check Out The Lesson</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Geometry</h5>
-            <p class="card-text">Different shapes...</p>
-            <a href="./metry.html"> Check Out The Lesson</a>
-          </div>
-        </div>
+      <!-- TEST CTA -->
+      <div class="p-4 border border-2 border-primary rounded text-center mt-5 bg-light">
+        <h4 class="fw-bold">Take your test. Get your badge!</h4>
+        <a href="js3math.html" class="btn btn-primary mt-2">Assessment Test</a>
       </div>
     </div>
 
+     <footer class="bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>Explore Topics</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Math</a></li>
+              <li><a href="#" class="text-white">Etiquette</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>From Our Learners</h5>
+            <p>
+              <em>"This site changed how I see learning."</em><br />— Maya, 22
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>More Feedback</h5>
+            <p>
+              <em>"I used to hate math — now I'm an A-student!"</em><br />—
+              Andrew, 32
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Stay Connected</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Download App</a></li>
+              <li><a href="#" class="text-white">Join Discord</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center pt-3">
+          <small>© 2025 Learn Hub. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-    
+
+

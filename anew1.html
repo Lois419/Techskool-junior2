@@ -1,105 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JSS1 Mathematics Lessons</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
 
-  <body>
-    <iframe
-      src="./navbar.html"
-      frameborder="0"
-      width="100%"
-      height="70"
-    ></iframe>
-    <h1 class="text-center display-4 bg-primary text-white rounded p-0 m-0">
-      Mathematics for Junior Secondary Schools 1
-    </h1>
-    <p>
-      In the first year of Junior Secondary, students are introduced to esential
-      mathematical concepts and akills that lay the foundation for future
-      learning, aiming to develop their problem solving abilities, logical
-      reasoning and analytical skills, preparing them for more advanced math
-      topics and real-life applications.
-    </p>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-lightning-charge-fill me-2"></i>LearnHub
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown">
+              Courses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="jss1.html">JSS1</a></li>
+              <li><a class="dropdown-item" href="jss2.html">JSS2</a></li>
+              <li><a class="dropdown-item" href="jss3.html">JSS3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-warning ms-2" href="register.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- HERO SECTION -->
+  <section class="text-white text-center p-5" style="background: linear-gradient(135deg, #0d6efd, #5fa9ff);">
+    <h1 class="display-4 fw-bold">JSS1 Mathematics</h1>
+    <p class="lead">Start your math journey with clear and simple lessons. These topics will help you build strong math skills from the ground up.</p>
+  </section>
+
+  <!-- LESSON CARDS -->
+  <div class="container mt-5">
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card">
+
+      <!-- Whole Numbers -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
           <div class="card-body">
-            <h5 class="card-title">Whole Numbers</h5>
-            <p class="card-text">Whole Numbers are positive in...</p>
-            <a href="./whole numbers.html"> Take the Lesson</a>
+            <h5 class="card-title"><i class="bi bi-123"></i> Whole Numbers</h5>
+            <p class="card-text">Learn how to work with whole numbers confidently.</p>
+            <a href="whole numbers.html">Check Out The Lesson</a>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" id="whole">
+              <label class="form-check-label" for="whole">Mark as done</label>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card">
+      <!-- Addition & Subtraction -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
           <div class="card-body">
-            <h5 class="card-title">
-              Basic Operators( ADDITION AND SUBTRACTION)
-            </h5>
-            <p class="card-text">Two basic opera...</p>
-            <a href="./add.html"> Take the Lesson</a>
+            <h5 class="card-title"><i class="bi bi-plus-slash-minus"></i> Basic Operators (Add & Subtract)</h5>
+            <p class="card-text">Master simple addition and subtraction techniques.</p>
+            <a href="add.html">Check Out The Lesson</a>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" id="addsub">
+              <label class="form-check-label" for="addsub">Mark as done</label>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card">
+      <!-- Multiplication & Division -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
           <div class="card-body">
-            <h5 class="card-title">
-              Basic Operators( DIVISION AND MULTPLICATION)
-            </h5>
-            <p class="card-text">Two basic opera...</p>
-            <a href="./multiply.html"> Take the Lesson</a>
+            <h5 class="card-title"><i class="bi bi-slash-lg"></i> Basic Operators (Multiply & Divide)</h5>
+            <p class="card-text">Learn to multiply and divide with ease using simple steps.</p>
+            <a href="multiply.html">Check Out The Lesson</a>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" id="muldiv">
+              <label class="form-check-label" for="muldiv">Mark as done</label>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card">
+      <!-- Fractions -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
           <div class="card-body">
-            <h5 class="card-title">L.C.M and H.C.F</h5>
-            <p class="card-text">L.C.M stands fo...</p>
-            <a href="./lcm anc hcf.html"> Take the Lesson</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Counting in Base two</h5>
-            <p class="card-text">Different me...</p>
-            <a href="./base2.html"> Take the Lesson</a>
+            <h5 class="card-title"><i class="bi bi-pie-chart-fill"></i> Fractions</h5>
+            <p class="card-text">Understand how to compare, add, and subtract fractions.</p>
+            <a href="fraction.html">Check Out The Lesson</a>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" id="fractions">
+              <label class="form-check-label" for="fractions">Mark as done</label>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card">
+      <!-- Counting in Base Two -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
           <div class="card-body">
-            <h5 class="card-title">Fractions</h5>
-            <p class="card-text">Fractions are...</p>
-            <a href="./fraction.html">Take the Lesson</a>
+            <h5 class="card-title"><i class="bi bi-code-square"></i> Counting in Base Two</h5>
+            <p class="card-text">Learn binary counting and how it works in computers.</p>
+            <a href="base2.html">Check Out The Lesson</a>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" id="base2">
+              <label class="form-check-label" for="base2">Mark as done</label>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- LCM & HCF -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-graph-up-arrow"></i> L.C.M and H.C.F</h5>
+            <p class="card-text">Learn how to find the lowest common multiple and highest common factor.</p>
+            <a href="lcm.html">Check Out The Lesson</a>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" id="lcmhcf">
+              <label class="form-check-label" for="lcmhcf">Mark as done</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="card p-3 m-3">
-      <p class="card-body fw-bold h3">Take your test. GET YOUR BADGE!</p>
-      <a href="js1math.html">Assessment Test</a>
+    <!-- ASSESSMENT SECTION -->
+    <div class="p-4 border border-2 border-primary rounded text-center mt-5 bg-light">
+      <h4 class="fw-bold">Ready to test your skills?</h4>
+      <a href="js1math.html" class="btn btn-primary mt-2">Take the JSS1 Test</a>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- FOOTER -->
+  <footer class="bg-primary text-white text-center py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 LearnHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

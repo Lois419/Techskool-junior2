@@ -3,99 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABOUT</title>
+    <title>Learn Hub - Home</title>
+
+    <!-- External Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
     />
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
   </head>
 
-  <body>
+  <body style="font-family: 'Poppins', sans-serif">
+    <!-- Navbar -->
     <nav>
-      <iframe
-        src="./navbar.html"
-        frameborder="0"
-        width="100%"
-        height="58"
-      ></iframe>
+      <div id="navbar-container"></div>
     </nav>
-    <div class="container mt-5">
+
+    <!-- About Section -->
+    <div class="container mt-5 pt-4">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-start">About LearnHub</h1>
+          <h1>About LearnHub</h1>
           <p>
-            LearnHub ia a leading educationaal platform dedicating to empowering
-            JSS1 -JSS3 students in Nieria as they prepare for their Junior WAEC
-            exam. Our mission is to providing high-quality, accessible, engaging
-            learning resources that foster academic excellence and build a
-            strong foundation for future success.
+            LearnHub is a leading educational platform dedicated to empowering
+            JSS1–JSS3 students in Nigeria as they prepare for their Junior WAEC
+            exams. Our mission is to provide high-quality, accessible, and
+            engaging learning resources that foster academic excellence and
+            build a strong foundation for future success.
           </p>
         </div>
       </div>
     </div>
 
+    <!-- Team Section -->
     <div class="container mt-5">
-      <h2 class="text-start mb-4">Our Team</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-          <div class="text-center">
-            <img
-              style="width: 150px; height: 150px; object-fit: cover"
-              src="./img17.jpeg"
-              alt=""
-              class="rounded-circle"
-            />
-            <h5 class="mt-3">Lois Ijioma</h5>
-            <p>Team lead</p>
-          </div>
+      <h2>Our Team</h2>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img
+            src="./img17.jpeg"
+            alt="Lois Ijioma"
+            class="rounded-circle"
+            style="width: 150px; height: 150px; object-fit: cover"
+          />
+          <h5 class="mt-3">Lois Ijioma</h5>
+          <p>Team Lead</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img
+            src="./img18.jpeg"
+            alt="Mirabel Okafor"
+            class="rounded-circle"
+            style="width: 150px; height: 150px; object-fit: cover"
+          />
+          <h5 class="mt-3">Mirabel Okafor</h5>
+          <p>Course Manager</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img
+            src="./img19.jpeg"
+            alt="Priestly Chukwuemelie"
+            class="rounded-circle"
+            style="width: 150px; height: 150px; object-fit: cover"
+          />
+          <h5 class="mt-3">Priestly Chukwuemelie</h5>
+          <p>Developer</p>
         </div>
       </div>
+    </div>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-          <div class="text-center">
-            <img
-              style="width: 150px; height: 150px; object-fit: cover"
-              src="./img18.jpeg"
-              alt=""
-              class="rounded-circle"
-            />
-            <h5 class="mt-3">Mirabel Okafor</h5>
-            <p>Course Mananger</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-          <div class="text-center">
-            <img
-              style="width: 150px; height: 150px; object-fit: cover"
-              src="./img19.jpeg"
-              alt=""
-              class="rounded-circle"
-            />
-            <h5 class="mt-3">Priestly Chukwuemelie</h5>
-            <p>Developer</p>
-          </div>
-        </div>
-      </div>
-
-    
-
+    <!-- Values Section -->
     <div class="container mt-5">
-      <h3 class="text-start mb-4">Our Values</h3>
+      <h3>Our Values</h3>
       <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body text-center">
-              <i class="mortar-board"></i>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="bi bi-mortarboard display-4 text-primary mb-3"></i>
               <h5 class="card-title">Excellence</h5>
               <p class="card-text">
                 We strive for the highest standards in all our educational
@@ -104,75 +99,102 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body text-center">
-              <i class="bi bi-people"></i>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="bi bi-people-fill display-4 text-primary mb-3"></i>
               <h5 class="card-title">Community</h5>
               <p class="card-text">
-                We foster a supportive and collaborative learning environment
+                We foster a supportive and collaborative learning environment.
               </p>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body text-center">
-              <i class="bi bi-lightbulb"></i>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="bi bi-lightbulb display-4 text-primary mb-3"></i>
               <h5 class="card-title">Innovation</h5>
               <p class="card-text">
                 We embrace new ideas and technologies to enhance the learning
-                experience
+                experience.
               </p>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body text-center">
-              <i class="bi bi-shield-check"></i>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="bi bi-shield-check display-4 text-primary mb-3"></i>
               <h5 class="card-title">Integrity</h5>
               <p class="card-text">
-                We are committed to honesty, transperancy and ethical practices
+                We are committed to honesty, transparency, and ethical
+                practices.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Contact Info Inline -->
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-start">Contact Us</h1>
-          <p class="fw-light">
-            We would love to hear you! If you have any questions, suggestions or
-            feedback, please dont hesistate to reach out to us at
-            support@learnhub.com or call us at 08056776438.
-          </p>
-        </div>
-      </div>
+      <h2>Contact Us</h2>
+      <p>
+        Have questions, suggestions, or feedback? Reach out via:
+        <strong>Email:</strong>
+        <a href="mailto:support@learnhub.com">support@learnhub.com</a> &nbsp; |
+        &nbsp; <strong>Phone:</strong>
+        <a href="tel:+2348056776438">0805 677 6438</a>
+      </p>
     </div>
 
-    <footer>
-      <iframe
-        src="./footer.html"
-        frameborder="0"
-        width="100%"
-        height="500"
-      ></iframe>
+    <!-- Footer -->
+    <footer class="footer mt-5">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>LearnHub</h3>
+          <p>Empowering JSS students with engaging educational content.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: support@learnhub.com</p>
+          <p>Phone: +234 805 677 6438</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 LearnHub. All rights reserved.
+      </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      // Inject Navbar
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+
+          // Push body down based on navbar height
+          const navbar = document.querySelector(".navbar");
+          if (navbar) {
+            document.body.style.paddingTop = navbar.offsetHeight + "px";
+          }
+        });
+
+      // AOS init
+      AOS.init();
+    </script>
   </body>
 </html>

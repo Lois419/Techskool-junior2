@@ -1,267 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <title>Basic Operators( ADDITION AND SUBTRACTION)</title>
-  </head>
-  <!-- //*<style>
-    .main {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basic Operators – LearnHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .lesson-header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 2rem 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .lesson-content {
       background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 800px;
-      width: 100%;
-      margin-top: 20px;
-    }*// -->
-   
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+    .lesson-content img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
+    }
   </style>
-  <body class="container my-3">
+</head>
+<body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Learn Hub</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index">Home</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./about">About</a>
-        </li>
-       
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Courses
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./anew1.html">JSS1</a></li>
-            <li><a class="dropdown-item" href="./anew2.html">JSS2</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="./anew3.html">JSS3</a></li>
-          </ul>
-        </li>
-       
+  <!-- NAVBAR (from index.html) -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b3d7ff;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">
+    LearnHub
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Classes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="anew1.html">JSS1</a></li>
+              <li><a class="dropdown-item" href="anew2.html">JSS2</a></li>
+              <li><a class="dropdown-item" href="anew3.html">JSS3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-warning" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Lesson Header -->
+  <div class="container">
+    <div class="lesson-header mt-4">
+      <h1>Basic Operators (Addition & Subtraction)</h1>
+      <p class="lead">Understand how to add and subtract numbers using place value.</p>
+    </div>
+
+    <!-- Lesson: Addition -->
+    <div class="lesson-content">
+      <h3 class="text-primary">Addition of Numbers</h3>
+      <p>
+        Addition involves combining numbers. Use place value positions like Units, Tens, Hundreds, and Thousands to align the digits correctly.
+      </p>
+      <p><strong>Example:</strong> Add 1425, 1231 and 30.</p>
+      <ul>
+        <li>Add Units: 5 + 1 + 6</li>
+        <li>Add Tens: 2 + 3 + 3</li>
+        <li>Add Hundreds: 4 + 2 + 0</li>
+        <li>Add Thousands: 1 + 1 + 0</li>
       </ul>
+      <p><strong>Total = 2,686</strong></p>
+      <img src="num.png" alt="Place value addition" />
+      <img src="add.png" alt="Addition example" />
+    </div>
 
-      <button class="btn  ml-auto" type="button">
-          <a href="./register.html">Register</a>
-        </button>
-      
+    <!-- Lesson: Subtraction -->
+    <div class="lesson-content">
+      <h3 class="text-primary">Subtraction of Numbers</h3>
+      <p>
+        Subtraction means taking away. You subtract digit by digit from right to left, just like in addition.
+      </p>
+      <p><strong>Example:</strong> Subtract 1,231 from 2,686:</p>
+      <ul>
+        <li>Units: 6 - 1</li>
+        <li>Tens: 8 - 3</li>
+        <li>Hundreds: 6 - 2</li>
+        <li>Thousands: 2 - 1</li>
+      </ul>
+      <p><strong>Answer = 1,455</strong></p>
+      <img src="subs.png" alt="Subtraction example" />
+    </div>
+
+    <!-- Word Problem -->
+    <div class="lesson-content">
+      <h3 class="text-primary">Word Problem Example</h3>
+      <p>
+        A man spent ₦2500 on housing, ₦1245 on savings, ₦3480 on feeding, and ₦248 on education. What is his total expenditure?
+      </p>
+      <ul>
+        <li>Units: 0 + 5 + 0 + 8</li>
+        <li>Tens: 0 + 4 + 8 + 4</li>
+        <li>Hundreds: 5 + 2 + 4 + 2</li>
+        <li>Thousands: 2 + 1 + 3 + 0</li>
+      </ul>
+      <p><strong>Total = ₦7,473</strong></p>
+      <img src="last.png" alt="Word problem solution" />
+    </div>
+
+    <!-- Quiz Prompt -->
+    <div class="card mb-5">
+      <div class="card-body text-center">
+        <h5 class="card-title">Ready to test yourself?</h5>
+        <p class="card-text">Click below to try a quick quiz on addition and subtraction!</p>
+        <a href="./addq.html" class="btn btn-success">Take Quiz</a>
+      </div>
     </div>
   </div>
-</nav>
-    <div class="main">
-      <div class="border-start-2 rounded ms-3 border-dark justify-content-center">
-        <h1 class="">Basic Operators</h1>
-        <p>
-          <i> <h6>Welcome to today's class</h6></i>
-        </p>
-        <h3 class="fw-bold text-primary">Addition of Numbers</h3>
-        <p>
-          The easiest method of adding or subtracting numbers is by having the
-          knowledge of place value system. By this system of arrangement, all
-          units ( U), Tens (T), Hundreds (H), Thousands ( T), and so, are
-          vertically arranged in line. As we stated earlier, numbers are written
-          from right to left by their <a href="#place-value"> place values</a>.
-        </p>
-        <img src="num.png" alt="" />
-      </div>
 
-       <div class="border-start-2 rounded ms-3 border-dark">
-      <h3 class="fw-bold text-primary">Examples.</h3>
-      <p>
-        if we were to add the numbers 1425. 1231 and 30,
-       <li>we would, first of all add the unit numbers i.e 5+1+6</li> 
-       <li>then  add the tens of numbers i.e 2+3+3</li>
-       <li> next, we would  add the hundreds numbers i.e 4+2+0</li>
-       <li>And finally, add the thousands of numbers i.e 1+1+0</li> 
-       Our total result would be : 2,686!
-      </p>
-      <img src="./add.png"> <img>
-      </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 LearnHub | <a href="about.html">About</a> | <a href="contact.html">Contact</a></p>
+  </footer>
 
-      <div class="border-start-2 rounded ms-3 border-dark">
-        <h2>Subtraction of Numbers</h2>
-        <p>
-       <p>Subtraction is the inverseprovcces of addition. In simple terms subtraction means taking away from another number. </p>
-        <p> Lets take away 1,231 from 2,686</p>
-        <li>lets, first of all subtract the unit numbers i.e 6-1 </li> 
-        <li>then  subtract the tens of numbers i.e 8-3</li>
-        <li> next, we would  subtract the hundreds numbers i.e 6-2</li>
-        <li>And finally, subtract the thousands of numbers i.e 2-1</li> 
-        Our total result would be : 1455!
-    </p>
-    <img src="./subs.png"> <img>
-      </div>
-
-    <div class="border-start-2 rounded ms-3 border-dark bg-white">
-      <h3>Lets Take One More Example..</h3>
-      <p>
-        A man spent #2500 on housing, #1245 on savings, #3480 on feeding and #248 on the children’s education.
-         How much did he spend altogether?
-         <p>  In this example, we add the all he spent together
-            <li>we would, first of all add the unit numbers i.e 0+5+0+8</li> 
-            <li>then  add the tens of numbers i.e 0+4+8+4</li>
-            <li> next, we would  add the hundreds numbers i.e 5+2+4+2</li>
-            <li>And finally, add the thousands of numbers i.e 2+1+3+0</li> 
-            Our total result would be : #7,473!<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <title>Basic Operators( ADDITION AND SUBTRACTION)</title>
-  </head>
-  <!-- //*<style>
-    .main {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 800px;
-      width: 100%;
-      margin-top: 20px;
-    }*// -->
-   
-  </style>
-  <body class="container my-3">
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Learn Hub</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index">Home</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./about">About</a>
-        </li>
-       
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Courses
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./anew1.html">JSS1</a></li>
-            <li><a class="dropdown-item" href="./anew2.html">JSS2</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="./anew3.html">JSS3</a></li>
-          </ul>
-        </li>
-       
-      </ul>
-
-      <button class="btn  ml-auto" type="button">
-          <a href="./register.html">Register</a>
-        </button>
-      
-    </div>
-  </div>
-</nav>
-    <div class="main">
-      <div class="border-start-2 rounded ms-3 border-dark justify-content-center">
-        <h1 class="">Basic Operators</h1>
-        <p>
-          <i> <h6>Welcome to today's class</h6></i>
-        </p>
-        <h3 class="fw-bold text-primary">Addition of Numbers</h3>
-        <p>
-          The easiest method of adding or subtracting numbers is by having the
-          knowledge of place value system. By this system of arrangement, all
-          units ( U), Tens (T), Hundreds (H), Thousands ( T), and so, are
-          vertically arranged in line. As we stated earlier, numbers are written
-          from right to left by their <a href="#place-value"> place values</a>.
-        </p>
-        <img src="num.png" alt="" />
-      </div>
-
-       <div class="border-start-2 rounded ms-3 border-dark">
-      <h3 class="fw-bold text-primary">Examples.</h3>
-      <p>
-        if we were to add the numbers 1425. 1231 and 30,
-       <li>we would, first of all add the unit numbers i.e 5+1+6</li> 
-       <li>then  add the tens of numbers i.e 2+3+3</li>
-       <li> next, we would  add the hundreds numbers i.e 4+2+0</li>
-       <li>And finally, add the thousands of numbers i.e 1+1+0</li> 
-       Our total result would be : 2,686!
-      </p>
-      <img src="./add.png"> <img>
-      </div>
-
-      <div class="border-start-2 rounded ms-3 border-dark">
-        <h2>Subtraction of Numbers</h2>
-        <p>
-       <p>Subtraction is the inverseprovcces of addition. In simple terms subtraction means taking away from another number. </p>
-        <p> Lets take away 1,231 from 2,686</p>
-        <li>lets, first of all subtract the unit numbers i.e 6-1 </li> 
-        <li>then  subtract the tens of numbers i.e 8-3</li>
-        <li> next, we would  subtract the hundreds numbers i.e 6-2</li>
-        <li>And finally, subtract the thousands of numbers i.e 2-1</li> 
-        Our total result would be : 1455!
-    </p>
-    <img src="./subs.png"> <img>
-      </div>
-
-    <div class="border-start-2 rounded ms-3 border-dark bg-white">
-      <h3>Lets Take One More Example..</h3>
-      <p>
-        A man spent #2500 on housing, #1245 on savings, #3480 on feeding and #248 on the children’s education.
-         How much did he spend altogether?
-         <p>  In this example, we add the all he spent together
-            <li>we would, first of all add the unit numbers i.e 0+5+0+8</li> 
-            <li>then  add the tens of numbers i.e 0+4+8+4</li>
-            <li> next, we would  add the hundreds numbers i.e 5+2+4+2</li>
-            <li>And finally, add the thousands of numbers i.e 2+1+3+0</li> 
-            Our total result would be : #7,473!
-        </p>
-      </p>
-       <img src="./last.png"> <img>
-    </div>
-    </div>
-
-     <div class="container mt-5">
-      <div class="card quiz-card">
-        <div class="card-body">
-          <div class="card-title">Test Your Knowledge!</div>
-          <p class="card-text">Take a Quiz</p>
-          <a href="./addq.html" id="take-quiz-btn" class="btn btn-primary">  Quiz</a>
-        </div>
-      </div>
-    </div>
-
-         <footer>
-        <iframe src="./footer.html" frameborder="0" width="100%" height="500" scrolling="no"></iframe>
-      </footer> 
-
-
-
-
-
-
-     
-
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
-  </body>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-
-      
-     

@@ -1,85 +1,160 @@
-.logo{
-    color: plum;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: larger;
-    text-shadow: #3366cc;
+/* === GENERAL RESET & BASE === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.btn{
+body {
+  background-image: url("imgs/WHITE BACKGROUND 2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Segoe UI", sans-serif;
+  color: #000;
+}
+
+/* === UNIVERSAL IMAGE STYLING === */
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* === LOGO === */
+
+.logo {
+  color: plum;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: xx-large;
+  text-shadow: 1px 1px 2px #3366cc;
+}
+
+/* === BUTTON === */
+
+.btn {
   color: rgb(255, 0, 0);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: transparent;
+  border: 2px solid rgb(255, 0, 0);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: large;
+  padding: 8px 16px;
+  transition: 0.3s ease;
 }
 
-.phew{
+.btn:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+/* === FLEX CONTAINER === */
+
+.phew {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   margin: 50px;
 }
 
-body{
-    background-image: url(imgs/WHITE\ BACKGROUND\ 2.jpg);
+/* === SECTION BACKGROUNDS === */
+
+.sec {
+  background-image: url("images.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.sec{
-    background-image:url(images.jpeg); 
-    }
-
-.otu{
-    background-image: url(img\ 3.jpg);     
+.otu {
+  background-image: url("img 3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.cry{
-    background-image: url();
+.cry {
+  background-color: #f5f5f5;
 }
-.abuo{
-  color: #000000;
-  margin-left: auto;
+
+/* === TEXT HELPERS === */
+
+.abuo {
+  text-align: center;
   margin: auto;
-  align-items: center;
-  justify-content: center;
+  font-weight: bold;
 }
 
-.ato{
+.ato {
   color: black;
   margin-right: 50px;
 }
 
+/* === MAIN SECTION === */
 
-
-img{
-  margin: 20px;
-  width: 500px;
-}
-
-.win{
+.win {
   margin: 70px;
 }
-.row{
+
+.row {
   justify-content: center;
 }
 
-.nah{
+.nah {
   font-size: xx-large;
+  text-align: center;
+  font-weight: bold;
+}
+
+.id {
+  margin: 80px;
+  font-size: 100px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
 }
 
- .id{
-  margin: 80px;
-  font-size: 100px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+/* === CAROUSEL === */
+
+.carousel {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  padding: 20px;
+}
+
+.carousel-inner {
   text-align: center;
- }
+}
 
-   .carousel {
-            max-width: 800px;
-            margin: auto;
-        }
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
 
+.carousel-item img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 380px;
+  object-fit: contain;
+  border-radius: 10px;
 
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 400px; /* Or any fixed height you prefer */
+  object-fit: contain;
+  border-radius: 16px;
+  border: 2px solid #ddd; /* Optional: makes border visible */
+}
 
+/* === NAVBAR === */
 
-
-        .navbar {
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -88,21 +163,11 @@ img{
   justify-content: space-around;
   align-items: center;
   padding: 15px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
-.wow{
-  text-align: center;
-  text-decoration: wavy;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.yay{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+/* === NAVIGATION BUTTONS === */
 
 .nav-link,
 .dropbtn {
@@ -115,24 +180,32 @@ img{
   cursor: pointer;
 }
 
-.science { background-color: #4da6ff; }  /* Blue */
-.english { background-color: #66cc66; }  /* Green */
-.maths   { background-color: #3366cc; }  /* Darker Blue */
-.profile { background-color: #2d862d; }  /* Darker Green */
+.science {
+  background-color: #4da6ff;
+}
+.english {
+  background-color: #66cc66;
+}
+.maths {
+  background-color: #3366cc;
+}
+.profile {
+  background-color: #2d862d;
+}
 
-/* Dropdown container */
+/* === DROPDOWN === */
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 140px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1001;
   top: 100%;
   left: 0;
@@ -140,7 +213,6 @@ img{
   overflow: hidden;
 }
 
-/* Dropdown links */
 .dropdown-content a {
   color: #333;
   padding: 10px 15px;
@@ -148,25 +220,28 @@ img{
   display: block;
 }
 
-/* Hover effects */
 .dropdown-content a:hover {
   background-color: #e0e0e0;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* === CONTENT === */
 
 .content {
   margin-top: 80px;
   padding: 20px;
 }
 
+/* === FOOTER === */
+
 .footer {
-  background: linear-gradient(135deg, #004e92, #000428); /* Blue theme */
-  /* For purple theme, try: linear-gradient(135deg, #6a00ff, #3d0074); */
+  background: linear-gradient(135deg, #004e92, #000428);
   color: #fff;
   padding: 40px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .footer-container {
@@ -220,6 +295,13 @@ img{
   padding-top: 20px;
 }
 
-.op{
+/* === MISC === */
+
+.op {
   background-color: rgba(128, 128, 128, 0.221);
+}
+
+.wow,
+.yay {
+  text-align: center;
 }

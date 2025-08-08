@@ -5,7 +5,7 @@ import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 
 // Your API key - REMEMBER THE SECURITY WARNING!
 // For a production application, this should be handled securely on a backend server.
-const API_KEY = "AIzaSyBUpMHR33orwFTCog8Mbte9WB8Jz83iIJ8";
+const API_KEY = "AIzaSyBnsvIwr1PBfs6pCVosvUNryXHgRDYEFHQ";
 
 // Initialize the Generative AI client with your API key
 const genAI = new GoogleGenerativeAI(API_KEY);
@@ -21,31 +21,15 @@ const chatBox = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
 const sendButton = document.getElementById("send-button");
 
-/**
- * Adds a message to the chat box with appropriate styling.
- * @param {string} message - The text content of the message.
- * @param {'user' | 'bot'} sender - The sender of the message ('user' or 'bot').
- */
-function addMessage(message, sender) {
-  const messageElement = document.createElement("div");
-  messageElement.classList.add("d-flex", "mb-2"); // Bootstrap flexbox for alignment
-
-  const messageContent = document.createElement("div");
-  messageContent.classList.add("p-2", "rounded", "shadow-sm"); // Bootstrap styling for message bubble
-  messageContent.textContent = message; // Set the message text
-
-  if (sender === "user") {
-    messageElement.classList.add("user-message", "justify-content-end"); // Align to right
-    messageContent.classList.add("bg-success", "text-white"); // Green background for user messages
-  } else {
-    messageElement.classList.add("bot-message", "justify-content-start"); // Align to left
-    messageContent.classList.add("bg-light"); // Light background for bot messages
-  }
-
-  messageElement.appendChild(messageContent); // Add message content to the container
-  chatBox.appendChild(messageElement); // Add the message container to the chat box
-
-  // Scroll to the bottom of the chat box to show the newest message
+// Add a message to the chat box using the new bubble structure
+function addMessage(sender, text) {
+  const msgDiv = document.createElement("div");
+  msgDiv.className = `message ${sender}`;
+  const bubble = document.createElement("div");
+  bubble.className = "bubble";
+  bubble.textContent = text;
+  msgDiv.appendChild(bubble);
+  chatBox.appendChild(msgDiv);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
