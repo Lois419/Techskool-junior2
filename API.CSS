@@ -26,3 +26,7 @@ body {
 .bot-message .p-2 {
   background-color: #f8f9fa !important; /* Light gray for bot messages */
 }
+
+a{
+  text-decoration: none;
+}
