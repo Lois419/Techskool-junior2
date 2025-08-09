@@ -1,18 +1,18 @@
 const questions = [
   {
-    question: "What is the capital of France?",
-    options: ["Paris", " London", "Berlin", "Rome"],
-    answer: 0,
-  },
-  {
-    question: "What is the largest planet in our Solar system?",
-    options: ["Earth", "Saturn", "Jupiter", "Uranus"],
+    question: "What is the place value of 5 in 5062?",
+    options: ["Hundreds", "Thousandth", "Unit", "Thousands"],
     answer: 3,
   },
   {
-    question: "What painted the Mona Lisa?",
-    options: ["Learnodo da Vinci", " Michelango", "Raphael", "Caravaggio"],
-    answer: 0,
+    question: "What is the place value of 6 in 62?",
+    options: ["unit", "Tens", "Tenth", "Hundreds"],
+    answer: 1,
+  },
+  {
+    question: "9 in roman numerals?",
+    options: ["IV", "VI", "II", "IX"],
+    answer: 3,
   }
 ];
 
